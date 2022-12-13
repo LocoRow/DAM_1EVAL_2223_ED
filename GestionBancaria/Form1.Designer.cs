@@ -39,26 +39,29 @@
             // 
             // txtSaldo
             // 
-            this.txtSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSaldo.Location = new System.Drawing.Point(195, 48);
+            this.txtSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSaldo.Location = new System.Drawing.Point(227, 55);
+            this.txtSaldo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSaldo.Name = "txtSaldo";
             this.txtSaldo.ReadOnly = true;
-            this.txtSaldo.Size = new System.Drawing.Size(274, 44);
+            this.txtSaldo.Size = new System.Drawing.Size(319, 44);
             this.txtSaldo.TabIndex = 0;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(195, 138);
+            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.Location = new System.Drawing.Point(227, 159);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(274, 44);
+            this.txtCantidad.Size = new System.Drawing.Size(319, 44);
             this.txtCantidad.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 55);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(29, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 37);
             this.label1.TabIndex = 2;
@@ -67,8 +70,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 145);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(29, 167);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 37);
             this.label2.TabIndex = 3;
@@ -77,8 +81,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(79, 229);
+            this.radioButton1.Checked = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton1.Location = new System.Drawing.Point(92, 264);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(141, 41);
             this.radioButton1.TabIndex = 4;
@@ -90,22 +96,23 @@
             // rbReintegro
             // 
             this.rbReintegro.AutoSize = true;
-            this.rbReintegro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbReintegro.Location = new System.Drawing.Point(261, 229);
+            this.rbReintegro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbReintegro.Location = new System.Drawing.Point(304, 264);
+            this.rbReintegro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbReintegro.Name = "rbReintegro";
             this.rbReintegro.Size = new System.Drawing.Size(172, 41);
             this.rbReintegro.TabIndex = 5;
-            this.rbReintegro.TabStop = true;
             this.rbReintegro.Text = "Reintegro";
             this.rbReintegro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.rbReintegro.UseVisualStyleBackColor = true;
             // 
             // btOperar
             // 
-            this.btOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btOperar.Location = new System.Drawing.Point(528, 87);
+            this.btOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btOperar.Location = new System.Drawing.Point(616, 100);
+            this.btOperar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btOperar.Name = "btOperar";
-            this.btOperar.Size = new System.Drawing.Size(183, 73);
+            this.btOperar.Size = new System.Drawing.Size(214, 84);
             this.btOperar.TabIndex = 6;
             this.btOperar.Text = "Realizar Operación";
             this.btOperar.UseVisualStyleBackColor = true;
@@ -113,9 +120,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 324);
+            this.ClientSize = new System.Drawing.Size(890, 374);
             this.Controls.Add(this.btOperar);
             this.Controls.Add(this.rbReintegro);
             this.Controls.Add(this.radioButton1);
@@ -123,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtSaldo);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "La Banca Siempre Gana";
             this.ResumeLayout(false);

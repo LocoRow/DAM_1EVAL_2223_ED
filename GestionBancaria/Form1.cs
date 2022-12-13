@@ -2,20 +2,20 @@ namespace GestionBancaria
 {
     public partial class Form1 : Form
     {
-        private double saldo = 1000;  // Saldo inicial de la cuenta, 1000€
+        private double saldo_jpt_1dam = 1000;  // Saldo inicial de la cuenta, 1000€
 
         public Form1()
         {
             InitializeComponent();
-            txtSaldo.Text = saldo.ToString();
+            txtSaldo.Text = saldo_jpt_1dam.ToString();
             txtCantidad.Text = "0";
         }
 
         private bool realizarReintegro(double cantidad)
         {
-            if (cantidad > 0 && saldo > cantidad)
+            if (cantidad > 0 && saldo_jpt_1dam >= cantidad)
             {
-                saldo -= cantidad;
+                saldo_jpt_1dam -= cantidad;
                 return true;
             }
             return false;
@@ -24,24 +24,31 @@ namespace GestionBancaria
         private void realizarIngreso(double cantidad)
         {
             if (cantidad > 0)
-                saldo += cantidad;
+                saldo_jpt_1dam += cantidad;
         }
 
         private void btOperar_Click(object sender, EventArgs e)
         {
-            double cantidad = Convert.ToDouble(txtCantidad.Text); // Cogemos la cantidad del TextBox y la pasamos a número
-            if (cantidad < 0)
+            double cantidad_jpt_1dam = Convert.ToDouble(txtCantidad.Text); // Cogemos la cantidad del TextBox y la pasamos a número
+
+            if (cantidad_jpt_1dam < 0)
             {
                 MessageBox.Show("Cantidad no válidá, sólo se admiten cantidades positivas.");
             }
-            if (rbReintegro.Checked)
-            {
-                if (realizarReintegro(cantidad) == false)  // No se ha podido completar la operación, saldo insuficiente?
-                    MessageBox.Show("No se ha podido realizar la operación (¿Saldo insuficiente?)");
-            }
+
             else
-                realizarIngreso(cantidad);
-            txtSaldo.Text = saldo.ToString();
+            {
+                if (rbReintegro.Checked)
+                {
+                    if (realizarReintegro(cantidad_jpt_1dam) == false)  // No se ha podido completar la operación, saldo insuficiente?
+                        MessageBox.Show("No se ha podido realizar la operación (¿Saldo insuficiente?)");
+                }
+
+                else
+                    realizarIngreso(cantidad_jpt_1dam);
+                txtSaldo.Text = saldo_jpt_1dam.ToString();
+            }
+            
         }
     }
 }
